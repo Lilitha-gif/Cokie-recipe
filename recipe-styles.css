@@ -1,0 +1,188 @@
+/* Reset some default styles */
+body, h1, h2, ul, ol, li, img, iframe {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.recipe-image {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.recipe-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.ingredients, .instructions, .video-section, .rating-review, .extra-features {
+    margin: 20px 0;
+}
+
+.ingredients h2, .instructions h2, .video-section h2, .rating-review h2, .extra-features h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.video-section iframe {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.fa-star {
+    font-size: 2em;
+    color: #ddd;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.fa-star:hover,
+.fa-star:hover ~ .fa-star {
+    color: #ffd700;
+}
+
+.review {
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .ingredients h2, .instructions h2, .video-section h2, .rating-review h2, .extra-features h2 {
+        font-size: 1.2em;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+.pink-background {
+    background-color: #e7c8c1; 
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.pink-background h2 {
+    color: #562c2c; 
+}
+
+.pink-background p {
+    color: #6a4c4c; 
+}
+
+/* Navigation section */
+.social-media {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.social-media ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-media ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-media ul li:last-child {
+    margin-right: 0;
+}
+
+.social-media ul li a {
+    color: #333;
+    font-size: 24px;
+}
+
+/* More recipes link */
+.more-recipes {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.more-recipes:hover {
+    text-decoration: underline;
+}
